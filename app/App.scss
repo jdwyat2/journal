@@ -1,0 +1,21 @@
+@import 'config/normalize';
+@import 'config/variables';
+@import 'config/animation';
+@import 'config/fonts';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: $background-colour;
+  color: $off-white-hover;
+  font-family: $font--body;
+}
+
+a {
+  color: $off-white-hover;
+}

@@ -1,0 +1,97 @@
+@import '../../../app/config/variables';
+
+$tilt-width: 90vw;
+$tilt-height: 100vh;
+
+.heading {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 2;
+  transform: scale(0.7);
+  opacity: 0;
+  transition: transform 1000ms ease, opacity 1700ms ease;
+  width: $tilt-width;
+  height: $tilt-height;
+
+  @include media-query(s) {
+    width: $tilt-width;
+    height: $tilt-height;
+  }
+
+  &--show {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  &__text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 28px;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: $font--body;
+    letter-spacing: 6px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    color: $off-white-hover;
+
+    &::before {
+      content: attr(data-text);
+      position: absolute;
+      color: rgba(230, 230, 230, 0.85);
+    }
+
+    @include media-query(s) {
+      height: 34px;
+      font-size: 80px;
+      letter-spacing: 15px;
+      line-height: 0.7;
+      font-weight: 700;
+    }
+
+    span {
+      display: none;
+      font-size: 15px;
+      margin: 40px auto 0;
+      max-width: 685px;
+      text-align: right;
+      font-weight: 300;
+      text-transform: none;
+      letter-spacing: 3px;
+
+      &::before {
+        content: attr(data-text);
+        position: absolute;
+        color: rgba(230, 230, 230, 0.65);
+      }
+
+      @include media-query(s) {
+        display: block;
+      }
+    }
+  }
+
+  &__tilt {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    @include media-query(s) {
+      width: 550px;
+      height: 335px;
+      width: $tilt-width;
+      height: $tilt-height;
+    }
+  }
+}

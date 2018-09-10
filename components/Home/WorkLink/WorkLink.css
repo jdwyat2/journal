@@ -1,0 +1,13 @@
+.work-link-container {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  z-index: 3;
+  color: #757575; }
+
+.work-link {
+  color: #757575;
+  cursor: pointer;
+  transition: color 500ms ease; }
+  .work-link:hover {
+    color: #e6e6e6; }

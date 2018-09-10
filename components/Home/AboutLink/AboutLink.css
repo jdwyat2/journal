@@ -1,0 +1,12 @@
+.about-link-container {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  z-index: 3; }
+
+.about-link {
+  color: #757575;
+  cursor: pointer;
+  transition: color 500ms ease; }
+  .about-link:hover {
+    color: #e6e6e6; }

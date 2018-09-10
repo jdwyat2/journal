@@ -1,0 +1,19 @@
+.social {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  z-index: 3; }
+  @media only screen and (min-width: 800px) {
+    .social {
+      top: 50px;
+      left: 50px; } }
+  .social__icon {
+    list-style-type: none;
+    margin-right: 15px;
+    display: inline-block; }
+    .social__icon svg {
+      width: 15px;
+      fill: #757575;
+      transition: fill 500ms ease; }
+    .social__icon:hover svg {
+      fill: #e6e6e6; }

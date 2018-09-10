@@ -1,0 +1,19 @@
+@import '../../../app/config/variables';
+
+.work-link-container {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  z-index: 3;
+  color: $off-white;
+}
+
+.work-link {
+  color: $off-white;
+  cursor: pointer;
+  transition: color $transition-default ease;
+
+  &:hover {
+    color: $off-white-hover;
+  }
+}

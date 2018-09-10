@@ -1,0 +1,21 @@
+.animate-in {
+  opacity: 0;
+  transform: rotate(-10deg) rotateX(25deg) translateX(10px) translateY(10px) translateZ(0);
+  transition: transform 1s cubic-bezier(0.23,1,0.32,1), opacity 0.5s cubic-bezier(0.165,0.84,0.44,1);
+}
+
+.animate-in--show {
+  opacity: 1;
+  transform: rotate(0) rotateX(0) translateX(0) translateY(0) translateZ(0);
+}
+
+.animate-in-ui {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: transform 1s cubic-bezier(0.23,1,0.32,1), opacity 0.5s cubic-bezier(0.165,0.84,0.44,1);
+}
+
+.animate-in-ui--show {
+  opacity: 1;
+  transform: translateY(0);
+}

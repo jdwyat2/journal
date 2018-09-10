@@ -1,0 +1,25 @@
+@import '../../app/config/variables';
+
+.navigation {
+  position: fixed;
+  top: 70px;
+  right: 70px;
+  z-index: 10;
+
+  &__item {
+    text-decoration: none;
+    color: #828282;
+    font-size: 12px;
+    font-family: $font--body;
+    letter-spacing: 3px;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+    transition: color $transition-default ease;
+
+    &:hover,
+    &--active {
+      color: #eee;
+    }
+  }
+}
